@@ -6,6 +6,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
+
 const CustomAppBar = ({ label, onSearch }) => {
   return (
     <Navbar bg="dark" expand="lg" sticky="top">
@@ -14,6 +15,7 @@ const CustomAppBar = ({ label, onSearch }) => {
           <img src="../logo.svg" alt="logo" height={70} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Nav>
           <InputGroup className="mb-3">
             <FormControl

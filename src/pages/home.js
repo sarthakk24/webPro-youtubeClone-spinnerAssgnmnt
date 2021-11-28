@@ -7,9 +7,12 @@ const Home = () => {
   const [searchText, setSearchText] = useState("");
   useEffect(() => {
     async function getVideos() {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/videos`, {
-        method: "GET",
-      });
+      const response = await fetch(
+        `https://salty-savannah-61881.herokuapp.com/videos`,
+        {
+          method: "GET",
+        }
+      );
       const data = await response.json();
       setVideos(data);
     }
@@ -24,7 +27,17 @@ const Home = () => {
         }}
       />
       {videos.length === 0 ? (
-        <Spinner animation="grow" variant="light" className="my-auto mx-auto" />
+        <Spinner
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+          }}
+          animation="grow"
+          variant="light"
+          className="my-auto mx-auto"
+          margin="auto"
+        />
       ) : (
         <Row xs={1} md={3} className="g-4">
           {videos
