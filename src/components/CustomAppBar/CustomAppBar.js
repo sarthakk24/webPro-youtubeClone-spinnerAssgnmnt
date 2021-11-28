@@ -15,7 +15,6 @@ const CustomAppBar = ({ label, onSearch }) => {
           <img src="../logo.svg" alt="logo" height={70} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
         <Nav>
           <InputGroup className="mb-3">
             <FormControl
