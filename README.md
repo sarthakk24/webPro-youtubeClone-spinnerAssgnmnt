@@ -1,9 +1,7 @@
 # WebPro Workshop Class Assignment
 
-Changed the alignment of the loading spinner to the center of the page
+Changed the alignment of the loading spinner to the center of the page And Added responsiveness for xs, md, lg, xl, xxl
 
-Added some responsiveness for screens
+### Submitted on 28 November 2021 , Last Commit on 28 November 2021
 
-## Submitted on 28 November 2021
-
-### By Sarthak Sachdeva
+#### By Sarthak Sachdeva
